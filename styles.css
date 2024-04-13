@@ -5,13 +5,15 @@
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-nav{
+nav {
     height: 100px;
+    width: auto;
     background: lightblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem calc((100vw - 1300px) / 2);
+    min-width: 100%;
 }
 
 .logo{
@@ -19,12 +21,94 @@ nav{
     font-size: 60px;
     font-weight: bold;
     font-style:italic;
-    padding: 0 32px;
+    padding: 0 2rem;
 }
 
 .nav-menu{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 60px;
     color: blue;
     font-size: 18px;
-    padding: 0 32px;
-    word-spacing: 16px;
+    padding: 0 2rem; 
+}
+
+.header{
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight:bold
+}
+
+img{
+    width: 400px;
+    height: auto;
+    padding: 2rem 2rem;
+}
+
+.dalton_info_container {
+    display: flex;
+}
+
+.dalton_introduction {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center content text */
+    margin-top: 1rem; /* Add some space between the image and the text */
+}
+
+.about_me_paragraph {
+    font-size: 1.4rem;
+    padding: 2rem;
+    line-height: 4rem;
+}
+
+.sierra_info_container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack the items vertically */
+}
+
+.Sierra_Images {
+    display: flex;
+    flex-direction: column; /* Stack the images and paragraph vertically */
+    align-items: center; /* Center the items horizontally */
+}
+
+.sierra_paragraph {
+    font-size: 1.4rem;
+    padding: 2rem;
+    line-height: 2rem; /* Adjust line height as needed */
+    text-align: center; /* Center the text */
+}
+
+.info_paragraph {
+    margin-bottom: 20px; /* Add some space between the paragraph and the images */
+}
+
+img {
+    width: 400px;
+    height: auto;
+    padding: 2rem 0; /* Adjust padding as needed */
+}
+
+footer {
+    height: 100px;
+    width: auto;
+    background: lightblue;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+}
+
+.logo_2{
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: bold;
+    font-style:italic;
+    padding: 0 2rem;
 }
